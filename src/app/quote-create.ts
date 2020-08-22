@@ -1,5 +1,6 @@
 export class QuoteCreate {
-    constructor(public quote:string, public quoteDetails:string,public  timePassed:Date){
+    showDescription:boolean
+    constructor(public author:string, public quote:string,public  timePassed:Date){
         
     }
 }

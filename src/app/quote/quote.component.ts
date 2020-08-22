@@ -7,7 +7,15 @@ import {QuoteCreate} from '../quote-create';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  title:string ="Quotes Web";
+  title:string ="Quotes page";
+  quotes:QuoteCreate[];
+  /**Has methods that pushes a quote to the quotes array */
+  addNewQuote(quote){
+    let quoteLength=this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.timePassed=new Date(quote.timePassed);
+    this.quotes.push(quote);
+  }
   constructor() { }
 
   ngOnInit(): void {
