@@ -1,5 +1,5 @@
 export class QuoteCreate {
-    constructor(public quote:string, public quoteDetails:string){
+    constructor(public quote:string, public quoteDetails:string,public  timePassed:Date){
         
     }
 }

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { QuoteDisplayComponent } from './quote-display/quote-display.component';
 import { QuoteDetailsDisplayComponent } from './quote-details-display/quote-details-display.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     QuoteDisplayComponent,
-    QuoteDetailsDisplayComponent
+    QuoteDetailsDisplayComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
