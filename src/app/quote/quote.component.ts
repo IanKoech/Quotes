@@ -21,7 +21,7 @@ export class QuoteComponent implements OnInit {
   }
   /*Method below shows quote details*/
   showDetails(index){
-    this.quotes[index].showDescription=!this.quotes[index].showDescription;
+    this.quote[index].author +" "+this.quote[index].name; 
   }
   makeUpVote(index){
     this.quotes[index].upvotes++;

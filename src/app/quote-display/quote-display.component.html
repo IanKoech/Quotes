@@ -2,5 +2,11 @@
 Add event binding to display the quote author and the quote details when the user clicks on 
 the quote-->
 <!--This component displays the quote to the user-->
-<p>{{}}</p>
-<p>The quote was posted {{}} days ago</p>
+<!--Use custom directive that shows number of days passed-->
+<!--Use pipe to change the date output format-->
+<ul>
+    <li>Author : {{quote.author}}</li>
+    <li>Upvotes : {{quote.upvotes}}</li>
+    <li>Downvotes : {{quote.downvotes}}</li>
+</ul>
+<p>The quote was posted <!--Enter the days that have passed since the quote was posted--></p>
