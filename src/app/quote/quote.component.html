@@ -1,6 +1,6 @@
 <!--Resize the jumbotron in the css file-->
 <div class="jumbotron">
-
+    {{title}}
 </div>
 
 <div class="container">
@@ -8,7 +8,25 @@
         <div class="col-md-6">
             <div *ngFor="let quote of quotes; let i=index">
                 <div>
-    
+                    <p id={{i}}>{{quote.quote}}</p>
+                    <div>
+                        <img (click)="makeUpVote(i)" src="https://image.flaticon.com/icons/svg/633/633759.svg" width="25px" height="auto" alt="Thumbs up">
+                        <p></p>
+                        <img (click)="makeDownVote(i)" src="https://image.flaticon.com/icons/svg/1612/1612623.svg" width="25px" height="auto" alt="Thumbs down">
+                    </div>
+                    
+                    
+                    <br>
+                    
+                    <!--Button for quote details is below-->
+                    <p></p>
+                    <button (click)="showDetails(i)" class="btn btn-secondary">Show Details</button>
+                    <!--Below shows number of upvotes  and downvotes-->
+                    <div *ngIf="quote.showDetails">
+                        
+                    </div>
+                    
+            
                 </div>
     
             </div>
