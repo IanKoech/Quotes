@@ -33,9 +33,5 @@ The angualar directive whose function is to highlight the quote with the most up
 # Support and contact details
 For any contributions or send feedback, reach out to me at iankoech9@gmail.com
 
-#Link to live page
------
-[Quotes](https://IanKoech.github.io/Quotes-app/)
-
 # License and Copyright
 MIT Licence @Copyright Ian Koech
