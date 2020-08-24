@@ -16,34 +16,25 @@ Copy the link to the repo and run `git clone <repoLink>` on your terminal
 Run `ng serve` on your terminal to load the page on your local server and go to `http://localhost:4200` to load all resource files
 
 
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 ### Technologies Used
 Angular
+
 Type-script
+
 HTML
+
 CSS
+
 Bootstrap
 
-## Known Bugs
+# Known Bugs
 The angualar directive whose function is to highlight the quote with the most upvotes is not functioning as it should
 
-## Support and contact details
+# Support and contact details
 For any contributions or send feedback, reach out to me at iankoech9@gmail.com
 
-##Link to live page
-[Quotes](https://iankoech.github.io/Quotes-app/)
+#Link to live page
+[Quotes](https://IanKoech.github.io/Quotes-app/)
 
-## License and Copyright
+# License and Copyright
 MIT Licence @Copyright Ian Koech
