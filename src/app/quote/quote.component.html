@@ -8,22 +8,31 @@
         <div class="col-md-6">
             <div *ngFor="let quote of quotes; let i=index">
                 <div>
-                    <p id={{i}}>{{quote.quote}}</p>
                     <div>
+                        <p id={{i}}>{{quote.quote}}</p>
+                        
                         <img (click)="makeUpVote(i)" src="https://image.flaticon.com/icons/svg/633/633759.svg" width="25px" height="auto" alt="Thumbs up">
                         <p></p>
                         <img (click)="makeDownVote(i)" src="https://image.flaticon.com/icons/svg/1612/1612623.svg" width="25px" height="auto" alt="Thumbs down">
+                        <p></p>
+                        <button (click)="toggleShowDetails(i)">Show details</button>
                     </div>
+                   
+                   <br>
+                   <div *ngIf="quote.showDescription">
+                        <app-quote-display [quote]="quote "></app-quote-display>
+                   </div>
                     
                     
                     <br>
                     
                     <!--Button for quote details is below-->
                     <p></p>
-                    <button (click)="showDetails(i)" class="btn btn-secondary">Show Details</button>
+                    
+                    
                     <!--Below shows number of upvotes  and downvotes-->
                     <div *ngIf="quote.showDetails">
-                        <app-quote-display ></app-quote-display>
+                        
                     </div>
                     
             

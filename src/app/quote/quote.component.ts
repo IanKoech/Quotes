@@ -7,7 +7,7 @@ import {QuoteCreate} from '../quote-create';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  @Input() quote:QuoteCreate;
+  
   title:string ="Quotes page";
   quotes:QuoteCreate[]=[
     new QuoteCreate('Ian Koech','Time passes by',new Date())
@@ -20,8 +20,8 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
   }
   /*Method below shows quote details*/
-  showDetails(index){
-    this.quote[index].author +" "+this.quote[index].name; 
+  toggleShowDetails(index){
+    this.quotes[index].showDescription=!this.quotes[index].showDescription;
   }
   makeUpVote(index){
     this.quotes[index].upvotes++;
@@ -29,6 +29,7 @@ export class QuoteComponent implements OnInit {
   makeDownVote(index){
     this.quotes[index].downvotes++;
   }
+  
   constructor() { }
 
   ngOnInit(): void {
