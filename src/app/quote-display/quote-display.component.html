@@ -9,4 +9,4 @@ the quote-->
     <li>Upvotes : {{quote.upvotes}}</li>
     <li>Downvotes : {{quote.downvotes}}</li>
 </ul>
-<p>The quote was posted <!--Enter the days that have passed since the quote was posted--></p>
+<p>The quote was posted {{quote.date|timePassed}} days ago<!--Enter the days that have passed since the quote was posted--></p>
