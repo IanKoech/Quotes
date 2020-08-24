@@ -12,11 +12,6 @@ export class TimePassedPipe implements PipeTransform {
     const secondsInDay=86400;
     var dateDifferenceSeconds=difference*0.001;
     var dateCounter=dateDifferenceSeconds/secondsInDay;
-    if(dateCounter>=1 && value>todayWithNoTime){
-      return dateCounter;
-    }else{
-      return 0;
-    }
+    return dateCounter;
   }
-
 }
