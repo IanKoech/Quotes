@@ -15,7 +15,7 @@ The show details icon allows the user to check the number of upvotes and downvot
 
 # Set-up Installation
 Copy the link to the repo and run `git clone <repoLink>` on your terminal
-Run `ng serve` on your terminal to load the page on your local server and go to `http://localhost:4200` to load all resource files
+Run `ng serve` on your terminal to load the page on your local server and go to `http://localhost:4200` to load all resource file
 
 
 ### Technologies Used
