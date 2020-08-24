@@ -2,9 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Description
+This project allows users to enter a quote from a particular person and also upvote and downvote on already existing quotes
+
+# Behaviour Driven Development
+User clicks on a thumbs-up icon to upvote on a particular quote
+User clicks on a thumbs-down icon to downvote a particular quote
+The show details icon allows the user to check the number of upvotes and downvotes the quote has, displays the author of the quote and the number of days that have passed since the quote was uploaded.
+
+# Set-up Installation
+Copy the link to the repo and run `git clone <repoLink>` on your terminal
+Run `ng serve` on your terminal to load the page on your local server and go to `http://localhost:4200` to load all resource files
+
+
 
 ## Code scaffolding
 
@@ -18,10 +29,21 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Technologies Used
+Angular
+Type-script
+HTML
+CSS
+Bootstrap
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Known Bugs
+The angualar directive whose function is to highlight the quote with the most upvotes is not functioning as it should
 
-## Further help
+## Support and contact details
+For any contributions or send feedback, reach out to me at iankoech9@gmail.com
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##Link to live page
+[Quotes](https://iankoech.github.io/Quotes-app/)
+
+## License and Copyright
+MIT Licence @Copyright Ian Koech

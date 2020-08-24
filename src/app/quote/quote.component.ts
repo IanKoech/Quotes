@@ -8,7 +8,7 @@ import {QuoteCreate} from '../quote-create';
 })
 export class QuoteComponent implements OnInit {
   
-  title:string ="Quotes page";
+  title:string ="Quotes";
   quotes:QuoteCreate[]=[
     new QuoteCreate('Ian Koech','Yesterday is history, tomorrow is a mystery, but today is a gift, that is why it is called the present',new Date(2011,1,4)),
     new QuoteCreate('Oprah Winfrey','Be thankful for what you have , you will end up having more. If you concentrate on what you dont have you will never have enough',new Date(2015,4,29)),
