@@ -8,7 +8,9 @@ This project allows users to enter a quote from a particular person and also upv
 
 # Behaviour Driven Development
 User clicks on a thumbs-up icon to upvote on a particular quote
+
 User clicks on a thumbs-down icon to downvote a particular quote
+
 The show details icon allows the user to check the number of upvotes and downvotes the quote has, displays the author of the quote and the number of days that have passed since the quote was uploaded.
 
 # Set-up Installation
