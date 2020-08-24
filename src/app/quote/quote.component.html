@@ -1,9 +1,9 @@
 <!--Resize the jumbotron in the css file-->
-<div class="jumbotron">
-    {{title}}
+<div class="jumbotron" id="jumbo">
+    <h4>{{title}}</h4>
 </div>
 
-<div class="container">
+<div class="container" id="cont">
     <div class="row">
         <div class="col-md-6">
             <div *ngFor="let quote of quotes; let i=index">
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="form">
             <app-form (addQuote)="addNewQuote($event)"></app-form>
         </div>
         

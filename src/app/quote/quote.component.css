@@ -1,0 +1,12 @@
+#jumbo{
+    text-align:center;
+    height:2rem;
+    font-weight: bolder;
+    background-color: azure;
+}
+#cont{
+    background-color: burlywood;
+}
+#form{
+    font-size: small;
+}

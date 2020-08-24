@@ -1,34 +1,37 @@
 <div>
-    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
+    <h4>Submit a new quote</h4>
+    <form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
+        
         <div class="form-group">
             <label for="authorName">Enter the authors name:</label>
             <br>
-            <input type="text" id="authorName" required class="form-control" [(ngModel)]="newQuote.author"  #author="ngModel" name="author" length="80px">
+            <input type="text" id="authorName" required class="form-control" [(ngModel)]="newQuote.author"  #author="ngModel" name="author" length="50px">
             
         </div>
         <!--Test to see whether data was successfully receied-->
         
-        <div>
+        <div class="form-group">
             <label for="quote">Enter the quote</label>
             <br>
             <textarea id="quote" maxlength="200px" required [(ngModel)]="newQuote.quote" #quote="ngModel" name="quote"></textarea>
         </div>
         <!--Test below shows whether the textarea works as it should-->
-        <div>
+        <div class="form-group">
             <label for="date">Enter the date</label>
             <br>
             <input type="date" required [(ngModel)]="newQuote.date" name="date" #date="ngModel">
             <br>
         </div>
-        <div>
+        <div class="form-group">
             <label for="name">Enter your name:</label>
             <br>
             <input type="text" id="name" required >
             <div></div>
         </div>
+        <button type="submit" class="btn btn-success">Upload Quote</button>
     </form>
     <br>
     <br>
-    <div class=" btn btn-success" type="submit">Upload Quote</div>
+    
 </div>
 <!--Code below displays the available quotes-->
