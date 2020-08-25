@@ -8,7 +8,9 @@ export class HighlightQuoteDirective {
   constructor(private elem:ElementRef) { 
     this.elem.nativeElement.style.backgroundColor="green";
   }
-  
+  setBackGround(){
+    this.elem.nativeElement.style.backgroundColor="green";
+  }
   
 
 }

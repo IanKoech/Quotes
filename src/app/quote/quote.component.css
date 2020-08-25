@@ -1,9 +1,14 @@
+body{
+    background-color: black;
+}
 #jumbo{
     text-align:center;
     height:2rem;
     font-weight: bolder;
-    background-color: azure;
+    background-color: darkslategrey;
+    color: floralwhite;
 }
+
 #cont{
     background-color: burlywood;
 }
